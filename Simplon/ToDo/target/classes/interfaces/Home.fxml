@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="666.0" prefWidth="1052.0" style="-fx-background-color: wait;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
+   <children>
+      <ImageView fitHeight="682.0" fitWidth="1171.0" pickOnBounds="true" preserveRatio="true" />
+      <TableView fx:id="tableview" layoutX="10.0" layoutY="434.0" prefHeight="231.0" prefWidth="1032.0">
+         <columns>
+            <TableColumn fx:id="datecol" prefWidth="155.199951171875" style="-fx-background-color: eeeeee;" text="Date" />
+            <TableColumn fx:id="titrecol" prefWidth="163.99993896484375" style="-fx-background-color: eeeeee;" text="Titre" />
+            <TableColumn fx:id="statutcol" prefWidth="281.5999755859375" style="-fx-background-color: eeeeee;" text="Statut" />
+            <TableColumn fx:id="categoriecol" minWidth="8.0" prefWidth="154.4000244140625" style="-fx-background-color: eeeeee;" text="Categorie" />
+            <TableColumn fx:id="desciptioncol" prefWidth="275.99993896484375" style="-fx-background-color: eeeeee;" text="Description" />
+         </columns>
+      </TableView>
+      <TextField fx:id="titreaction" alignment="CENTER" layoutX="752.0" layoutY="164.0" prefHeight="36.0" prefWidth="227.0" style="-fx-background-radius: 100;" />
+      <Text fill="#99998f" layoutX="656.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+         <font>
+            <Font name="Candara Bold Italic" size="20.0" />
+         </font></Text>
+      <TextField fx:id="discriptionaction" alignment="CENTER" layoutX="746.0" layoutY="320.0" prefHeight="99.0" prefWidth="227.0" style="-fx-background-radius: 20;" />
+      <Button fx:id="add" layoutX="527.0" layoutY="59.0" mnemonicParsing="false" onAction="#add" prefHeight="36.0" prefWidth="142.0" style="-fx-background-color: eeeeee; -fx-background-radius: 100;" text="Ajouter une tache">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="update" layoutX="681.0" layoutY="59.0" mnemonicParsing="false" onAction="#update" prefHeight="36.0" prefWidth="142.0" style="-fx-background-color: eeeeee; -fx-background-radius: 100;" text="update une tache">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="delete" layoutX="831.0" layoutY="59.0" mnemonicParsing="false" onAction="#delete" prefHeight="36.0" prefWidth="141.0" style="-fx-background-color: #eeeeee; -fx-background-radius: 100;" text="suprrimer une tache ">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <ChoiceBox fx:id="statutaction" layoutX="749.0" layoutY="217.0" prefHeight="36.0" prefWidth="227.0" style="-fx-background-color: #eeeeee; -fx-background-radius: 100;" />
+      <ChoiceBox fx:id="categorieaction" layoutX="747.0" layoutY="271.0" prefHeight="36.0" prefWidth="227.0" style="-fx-background-color: #eeeeee; -fx-background-radius: 100;" />
+      <TextField fx:id="dateaction" alignment="CENTER" layoutX="752.0" layoutY="114.0" prefHeight="36.0" prefWidth="227.0" style="-fx-background-radius: 100;" />
+      <Button fx:id="logout" layoutX="915.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: eeeeee; -fx-background-radius: 100;" text="Log out">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Text fill="#a4a49c" layoutX="656.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titre">
+         <font>
+            <Font name="Candara Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#a4a49d" layoutX="653.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staut">
+         <font>
+            <Font name="Candara Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#a4a49d" layoutX="643.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category">
+         <font>
+            <Font name="Candara Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#a4a49d" layoutX="634.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description">
+         <font>
+            <Font name="Candara Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="432.0" fitWidth="747.0" layoutX="-3.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Bullet_journal-amico.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="33.0" layoutX="869.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/enter.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
